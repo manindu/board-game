@@ -1,0 +1,11 @@
+@import "../../styling/main.scss";
+
+.Tile {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+  border: 2px solid $primary-color;
+}

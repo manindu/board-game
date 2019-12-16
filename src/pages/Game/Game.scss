@@ -1,0 +1,60 @@
+@import '../../styling/main.scss';
+
+.game-page-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+
+  .game-board {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .player {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: black;
+    position: absolute;
+    top: 3.5rem;
+    left: 3.5rem;
+    z-index: 100;
+  }
+
+  .slider {
+    position: relative;
+    background-color: lightgrey;
+    width: 15rem;
+    height: 2px;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .knob {
+      position: absolute;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 2rem;
+      background-color: $primary-color;
+      top: -0.8rem;
+      left: 0;
+    }
+
+    .marker {
+      height: 1.6rem;
+      width: 1px;
+      background-color: lightgrey;
+      position: absolute;
+      top: -0.8rem;
+      left: 7.5rem;
+    }
+  }
+
+  .controls-block {
+    margin-top: 3rem;
+  }
+}
